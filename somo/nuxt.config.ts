@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   'nuxt-windicss'
 ],
 runtimeConfig: {
-  apiKey: 'ecc80b1af4f1c129da724fa760bf5e5c',
-  apiBaseUrl: 'https://api.themoviedb.org/3/',
+  apiKey: process.env.NUXT_API_KEY,
+  apiBaseUrl: process.env.NUXT_API_BASE_URL,
   // We use the public runtime config in 
   //order to expose this also to the client side
   public: {
